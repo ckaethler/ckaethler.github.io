@@ -1,0 +1,275 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Tektur Font */
+@font-face {
+  font-family: "Tektur";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Tektur Regular"), local("Tektur-Regular"),
+    url("./fonts/Tektur/Tektur-Regular.ttf") format("truetype");
+}
+
+/* Handjet Font */
+@font-face {
+  font-family: "Handjet";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Handjet Regular"), local("Handjet-Regular"),
+    url("./fonts/Handjet/Handjet-Regular.ttf");
+}
+
+.font-tektur {
+  font-family: "Tektur", "Times New Roman";
+}
+
+.font-handjet {
+  font-family: "Handjet", "Times New Roman";
+}
+
+.font-medium {
+  font-size: 2rem;
+}
+
+.font-large {
+  font-size: 4rem;
+}
+
+.font-black {
+  color: #000;
+}
+
+.background-sky {
+  background-color: #d1d1d1;
+}
+
+.padding-1 {
+  padding: 1rem;
+}
+
+.padding-2 {
+  padding: 2rem;
+}
+
+.padding-3 {
+  padding: 3rem;
+}
+
+.padding-sides-2 {
+  padding: 0 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card-img {
+  max-width: 10rem;
+  max-height: 10rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  min-width: 18rem;
+  padding-top: 1rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.card-link {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-link:hover {
+  animation-name: enlarge;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  border-radius: 1rem;
+  box-shadow: inset 10rem 0 0 0 #ff4a4a;
+}
+
+.sticky-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.white-ground {
+  width: 100%;
+  height: 2rem;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.pine-tree-1 {
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: 1rem;
+  bottom: 2rem;
+  border-bottom: 11rem solid #5b6b09;
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+}
+
+.pine-tree-2 {
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: 4rem;
+  bottom: 2rem;
+  border-bottom: 9rem solid #718710;
+  border-left: 3rem solid transparent;
+  border-right: 3rem solid transparent;
+}
+
+.pine-tree-3 {
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: -4rem;
+  bottom: 2rem;
+  border-bottom: 9rem solid #404c0a;
+  border-left: 3rem solid transparent;
+  border-right: 3rem solid transparent;
+}
+
+.pine-tree-4 {
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: 3rem;
+  bottom: 2rem;
+  border-bottom: 15rem solid #455015;
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+}
+
+.pine-tree-5 {
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: 0rem;
+  bottom: 2rem;
+  border-bottom: 12rem solid #738623;
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+}
+
+.snowflakes {
+  background: url(https://i.imgur.com/T0mBFg2.png);
+  background-size: 20rem 10rem;
+  background-repeat: repeat;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  animation: snowfall 60s linear forwards infinite;
+}
+
+@keyframes enlarge {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.4);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes snowfall {
+  0% {
+    background-position: 0 0;
+  }
+  20% {
+    background-position: 10rem 10rem;
+  }
+  40% {
+    background-position: 20rem 20rem;
+  }
+  60% {
+    background-position: 30rem 30rem;
+  }
+  80% {
+    background-position: 40rem 40rem;
+  }
+  100% {
+    background-position: 50rem 50rem;
+  }
+}
+
+@media (max-width: 800px) {
+  p {
+    font-size: larger;
+  }
+
+  .font-medium {
+    font-size: 1rem;
+  }
+
+  .font-large {
+    font-size: 2rem;
+  }
+  .padding-1 {
+    padding: 0.5rem;
+  }
+
+  .padding-2 {
+    padding: 1rem;
+  }
+
+  .padding-3 {
+    padding: 1.5rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card-header {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
