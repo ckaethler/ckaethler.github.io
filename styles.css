@@ -7,6 +7,8 @@ html,
 body {
   width: 100vw;
   height: 100vh;
+  color: #000;
+  background-color: #d1d1d1;
 }
 
 /* Tektur Font */
@@ -43,14 +45,6 @@ body {
   font-size: 4rem;
 }
 
-.font-black {
-  color: #000;
-}
-
-.background-sky {
-  background-color: #d1d1d1;
-}
-
 .padding-1 {
   padding: 1rem;
 }
@@ -79,13 +73,13 @@ body {
 
 .card-header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
 .card-img {
-  max-width: 10rem;
-  max-height: 10rem;
+  max-width: 13rem;
+  max-height: 13rem;
 }
 
 .row {
@@ -121,7 +115,7 @@ body {
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   border-radius: 1rem;
-  box-shadow: inset 10rem 0 0 0 #ce0000;
+  box-shadow: inset 10rem 0 0 0 #e50000;
 }
 
 .sticky-footer {
@@ -252,6 +246,7 @@ body {
   .font-large {
     font-size: 2rem;
   }
+
   .padding-1 {
     padding: 0.5rem;
   }
@@ -271,5 +266,9 @@ body {
   .card-header {
     flex-wrap: wrap;
     flex-direction: column;
+  }
+
+  .card-img {
+    margin-bottom: 1rem;
   }
 }
