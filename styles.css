@@ -112,9 +112,9 @@ body {
 
 .card-link:hover {
   animation-name: enlarge;
-  animation-duration: 1s;
+  animation-duration: .5s;
   animation-timing-function: ease-in-out;
-  border-radius: 1rem;
+  border-radius: 10%;
   box-shadow: inset 10rem 0 0 0 #e50000;
 }
 
