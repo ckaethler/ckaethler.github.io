@@ -121,7 +121,7 @@ body {
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   border-radius: 1rem;
-  box-shadow: inset 10rem 0 0 0 #ff4a4a;
+  box-shadow: inset 10rem 0 0 0 #ce0000;
 }
 
 .sticky-footer {
@@ -145,7 +145,7 @@ body {
   position: absolute;
   left: 1rem;
   bottom: 2rem;
-  border-bottom: 11rem solid #5b6b09;
+  border-bottom: 11rem solid #084b00;
   border-left: 2rem solid transparent;
   border-right: 2rem solid transparent;
 }
@@ -156,7 +156,7 @@ body {
   position: absolute;
   left: 4rem;
   bottom: 2rem;
-  border-bottom: 9rem solid #718710;
+  border-bottom: 9rem solid #0b7100;
   border-left: 3rem solid transparent;
   border-right: 3rem solid transparent;
 }
@@ -167,7 +167,7 @@ body {
   position: absolute;
   left: -4rem;
   bottom: 2rem;
-  border-bottom: 9rem solid #404c0a;
+  border-bottom: 9rem solid #095b00;
   border-left: 3rem solid transparent;
   border-right: 3rem solid transparent;
 }
@@ -178,7 +178,7 @@ body {
   position: absolute;
   right: 3rem;
   bottom: 2rem;
-  border-bottom: 15rem solid #455015;
+  border-bottom: 15rem solid #063b00;
   border-left: 2rem solid transparent;
   border-right: 2rem solid transparent;
 }
@@ -189,7 +189,7 @@ body {
   position: absolute;
   right: 0rem;
   bottom: 2rem;
-  border-bottom: 12rem solid #738623;
+  border-bottom: 12rem solid #085200;
   border-left: 2rem solid transparent;
   border-right: 2rem solid transparent;
 }
